@@ -1,0 +1,7 @@
+{
+  "name": "wikimacs",
+  "description": "Connector to local editor for wiki pages",
+  "path": "/Users/me/wikimacs/wikimacs.py",
+  "type": "stdio",
+  "allowed_extensions": ["wikimacs@aswan.mozilla.org"]
+}

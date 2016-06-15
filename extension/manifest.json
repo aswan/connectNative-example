@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "name": "Wikimacs",
+  "version": "1.0",
+  "description": "Use emacs to edit wiki pages",
+  "icons": {
+    "32": "emacs.png"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "wikimacs@aswan.mozilla.org"
+    }
+  },
+
+  "manifest_version": 2,
+  "name": "wikimacs",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs",
+    "nativeMessaging"
+  ],  
+
+  "page_action": {
+    "default_icon": "emacs.png",
+    "default_title": "Edit in emacs"
+  },
+  
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://wiki.mozilla.org/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
