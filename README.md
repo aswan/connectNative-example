@@ -22,7 +22,7 @@ only available in [nightly builds](https://nightly.mozilla.org/).
 
 First, to make the native application usable from Firefox, copy
 `wikimacs.json` from this directory into
-`~/Library/Application Support/Mozilla/NativeMessaingHosts/wikimacs.json`.
+`~/Library/Application Support/Mozilla/NativeMessagingHosts/wikimacs.json`.
 Edit the copy so that the `path` property contains the full path to
 `wikimacs.py` from this directory.
 
